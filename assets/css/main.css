@@ -9,10 +9,6 @@
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-html, body {
-	height: 100%;
-}
-
 body {
   	background-color: #ffffff;
   	font-family: 'Montserrat', sans-serif;
@@ -246,8 +242,17 @@ bt {
 }
 
 /* ================== Customization =================================*/
-/* ensure fill class item to fill the 100% height in minimum */
-.fill {
-	min-height: 100%;
+/* Reponsive design, min-height:100%; */
+body {
 	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.container-fluid, .row-fluid {
+	height: inherit;
+}
+
+.fill {
+	min-height: 60%;
 }
